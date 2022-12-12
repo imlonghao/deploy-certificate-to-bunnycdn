@@ -1,0 +1,31 @@
+name: Deploy SSL certificate to GoEdge CDN
+description: Deploy SSL certificate to GoEdge CDN.
+branding:
+  icon: lock
+  color: blue
+inputs:
+  api-endpoint:
+    description: The API endpoint of GoEdge.
+    required: true
+  access-key-type:
+    description: "The type of AccessKey (default: user)."
+    required: false
+    default: user
+  access-key-id:
+    description: The AccessKeyId used to authenticate with GoEdge.
+    required: true
+  access-key:
+    description: The AccessKeySecret used to authenticate with GoEdge.
+    required: true
+  cert-id:
+    description: The ID of the certificate to be deployed.
+    required: true
+  fullchain-file:
+    description: The file path of the PEM fullchain certificate.
+    required: true
+  key-file:
+    description: The file path of the PEM private key file.
+    required: true
+runs:
+  using: node16
+  main: bootstrap.js
