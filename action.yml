@@ -1,24 +1,17 @@
-name: Deploy SSL certificate to GoEdge CDN
-description: Deploy SSL certificate to GoEdge CDN.
+name: Deploy SSL certificate to Bunny CDN
+description: Deploy SSL certificate to Bunny CDN.
 branding:
   icon: lock
   color: blue
 inputs:
-  api-endpoint:
-    description: The API endpoint of GoEdge.
+  id:
+    description: The ID of the requested Pull Zone
     required: true
-  access-key-type:
-    description: "The type of AccessKey (default: user)."
-    required: false
-    default: user
-  access-key-id:
-    description: The AccessKeyId used to authenticate with GoEdge.
+  hostname:
+    description: The hostname to which the hostname will be added
     required: true
   access-key:
-    description: The AccessKeySecret used to authenticate with GoEdge.
-    required: true
-  cert-id:
-    description: The ID of the certificate to be deployed.
+    description: The API access key from https://dash.bunny.net/account/settings
     required: true
   fullchain-file:
     description: The file path of the PEM fullchain certificate.

@@ -1,9 +1,9 @@
 {
-  "name": "deploy-certificate-to-goedge",
+  "name": "deploy-certificate-to-bunnycdn",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/renbaoshuo/deploy-certificate-to-tencentcloud.git",
-  "author": "Baoshuo <i@baoshuo.ren>",
+  "repository": "https://github.com/imlonghao/deploy-certificate-to-bunnycdn.git",
+  "author": "Hao Long <me@imlonghao.com>",
   "license": "MIT",
   "private": true,
   "dependencies": {
